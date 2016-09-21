@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My First Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style media="screen">
+  .container{
+    background-color: grey;
+  }
+  </style>
+</head>
+<body>
+  <form class="" action="submit.php" method="post">
+  <div class="container">
+    <div class="form-group col-sm-offset-4 col-sm-4">
+      <label >What is your name?</label>
+      <input class="form-control" type="text" name="name" value="">
+    </div>
+
+    <div class="form-group col-sm-offset-4 col-sm-4">
+      <label >What is your gender?</label>
+      <div class="radio">
+        <label ><input type="radio" name="gender" value="male">Male</label>
+      </div>
+      <div class="radio">
+        <label ><input type="radio" name="gender" value="female">Female</label>
+      </div>
+    </div>
+
+    <div class="form-group col-sm-offset-4 col-sm-4">
+      <label >What is your password?</label>
+      <input class="password" type="password" name="password" value="">
+    </div>
+
+    <div class="form-group col-sm-offset-4 col-sm-4">
+      <label >Check all foods below that you like: </label>
+      <div class="checkbox">
+        <label ><input type="checkbox" name="tacos" value="Yes">Tacos</label>
+      </div>
+      <div class="checkbox">
+        <label ><input type="checkbox" name="fried_rice" value="Yes">Fried Rice</label>
+      </div>
+      <div class="checkbox">
+        <label ><input type="checkbox" name="cat_fish" value="Yes">Catfish</label>
+      </div>
+      <div class="checkbox">
+        <label ><input type="checkbox" name="sandwitches" value="Yes">Sandwitches</label>
+      </div>
+      <div class="checkbox">
+        <label ><input type="checkbox" name="burgers" value="Yes">Burgers</label>
+      </div>
+      <div class="checkbox">
+        <label ><input type="checkbox" name="fries" value="Yes">Fries</label>
+      </div>
+    </div>
+
+    <div class="form-group col-sm-offset-4 col-sm-4">
+      <label>Check all foods below that you like: </label>
+      <div class="checkbox">
+        <label><input type="checkbox" name="windows" value="Yes">Windows</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="osx" value="Yes">OSX</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="linux" value="Yes">Linux</label>
+      </div>
+      <div class="checkbox">
+        <label ><input type="checkbox" name="plan9" value="Yes">Plan 9</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="other" value="Yes">Other</label>
+      </div>
+    </div>
+    <div class="form-group col-sm-offset-4 col-sm-4">
+      <label>Do you have any questions </label><textarea class="form-control" name="questions" rows="4" cols="40"></textarea>
+    </div>
+
+    <div class="form-group col-sm-offset-4 col-sm-4">
+      <button class="btn btn-success" type="submit" name="submit"> Submit</button>
+    </div>
+  </div>
+  </form>
+</body>
+</html>
